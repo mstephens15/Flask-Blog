@@ -1,3 +1,10 @@
+import os
+import secrets
+from PIL import Image
+from flask import url_for, current_app
+from flask_mail import Message
+from flaskblog import mail
+
 #Actually updates the picture, f_ext finds the extension of a pic(jpg, png)
 #The _ is usually 'f_name'
 #Use hex so the name of the profile pics dont overlap, which causes serious issues
